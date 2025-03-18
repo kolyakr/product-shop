@@ -85,4 +85,4 @@ const slice = createSlice({
   },
 });
 
-export const productReducer = slice.reducer;
+export const productsReducer = slice.reducer;

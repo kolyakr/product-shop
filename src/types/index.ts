@@ -10,3 +10,10 @@ export interface Product {
   weight: string;
   comments: number[];
 }
+
+export interface Comment {
+  id: number | null;
+  productId: number | null;
+  description: string;
+  date: string;
+}
