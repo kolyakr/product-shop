@@ -13,6 +13,7 @@ import {
   selectCommentsLoading,
   selectCommentsError,
 } from "../redux/comments/selectors";
+import { formatDate } from "../utils/formateDate";
 
 const Comments: React.FC<{ productId: string }> = ({ productId }) => {
   const dispatch = useDispatch<AppDispatch>();
@@ -33,7 +34,7 @@ const Comments: React.FC<{ productId: string }> = ({ productId }) => {
         id: Date.now().toString(),
         productId,
         description: newComment,
-        date: new Date().toISOString(),
+        date: formatDate(new Date()),
       };
       dispatch(addComment(comment));
       setNewComment("");
