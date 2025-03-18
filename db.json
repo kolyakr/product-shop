@@ -32,28 +32,27 @@
     {
       "id": "3",
       "name": "Bluetooth Speaker",
-      "imageUrl": "https://via.placeholder.com/150",
+      "imageUrl": "https://via.placeholder.com/151",
       "count": "12",
       "size": {
         "width": "10",
         "height": "8"
       },
-      "weight": "500g",
+      "weight": "600g",
+      "comments": []
+    },
+    {
+      "id": "1742324593354",
+      "name": "sadasdas",
+      "imageUrl": "sdads",
+      "count": "23",
+      "size": {
+        "width": "23",
+        "height": "23"
+      },
+      "weight": "20kg",
       "comments": []
     }
   ],
-  "comments": [
-    {
-      "id": "1",
-      "productId": "1",
-      "description": "These headphones have amazing sound quality!",
-      "date": "14:30 17.03.2025"
-    },
-    {
-      "id": "2",
-      "productId": "2",
-      "description": "Smart watch battery life is impressive.",
-      "date": "09:45 18.03.2025"
-    }
-  ]
+  "comments": []
 }

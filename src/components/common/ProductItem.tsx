@@ -3,7 +3,7 @@ import { useAppDispatch } from "../../hooks/auth";
 import { deleteProduct } from "../../redux/products/operations";
 import { Product } from "../../types";
 import { Link } from "react-router-dom";
-import DeleteProductModal from "./Modal/DeleteProduct";
+import DeleteProductModal from "./Modal/DeleteProductModal";
 
 const ProductItem = ({ product }: { product: Product }) => {
   const dispatch = useAppDispatch();

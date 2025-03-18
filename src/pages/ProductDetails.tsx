@@ -4,8 +4,8 @@ import { useAppSelector, useAppDispatch } from "../hooks/auth";
 import { selectSelectedProduct } from "../redux/products/selectors";
 import { getProductById, updateProduct } from "../redux/products/operations";
 import Comments from "../components/Comments";
-import UpdateProductForm from "../components/common/Modal/UpdateProductForm";
 import { Product } from "../types";
+import UpdateProductFormModal from "../components/common/Modal/UpdateProductFormModal";
 
 const ProductDetails: React.FC = () => {
   const { id } = useParams();
@@ -62,7 +62,9 @@ const ProductDetails: React.FC = () => {
               </p>
               <p className="mt-2 text-gray-600">
                 <span className="font-semibold">Size:</span>{" "}
-                {product?.size.width} x {product?.size.height}
+                {`${String(product?.size.width)} x ${String(
+                  product?.size.height
+                )}`}
               </p>
 
               <button
@@ -83,7 +85,7 @@ const ProductDetails: React.FC = () => {
         </>
       )}
 
-      <UpdateProductForm
+      <UpdateProductFormModal
         isOpen={isEditOpen}
         onClose={() => setIsEditOpen(false)}
         onSubmit={handleUpdate}

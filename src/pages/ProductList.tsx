@@ -3,8 +3,8 @@ import { getProducts, addProduct } from "../redux/products/operations";
 import { useAppDispatch, useAppSelector } from "../hooks/auth";
 import { selectProducts } from "../redux/products/selectors";
 import ProductItem from "../components/common/ProductItem";
-import AddProductForm from "../components/common/Modal/AddProductForm";
 import { Product } from "../types";
+import AddProductFormModal from "../components/common/Modal/AddProductFormModal";
 
 type SortOption = "alphabetical" | "count" | "alphabeticalCount";
 
@@ -85,7 +85,7 @@ const ProductList = () => {
         </p>
       )}
 
-      <AddProductForm
+      <AddProductFormModal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         onSubmit={handleAddProduct}
