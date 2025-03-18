@@ -1,27 +1,51 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "imageUrl": "https://via.placeholder.com/150",
-      "name": "Product 1",
-      "count": 5,
-      "size": { "width": 200, "height": 200 },
-      "weight": "500g",
-      "comments": [1, 2]
+      "name": "Product 3",
+      "count": "5",
+      "size": {
+        "width": "200",
+        "height": "200"
+      },
+      "weight": "300g",
+      "comments": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "1742322473379",
+      "name": "Aaa",
+      "imageUrl": "sdasda",
+      "count": "23",
+      "size": {
+        "width": "3",
+        "height": "3"
+      },
+      "weight": "5kg",
+      "comments": []
+    },
+    {
+      "id": "1742322982132",
+      "name": "new",
+      "imageUrl": "sadasdsa",
+      "count": "23",
+      "size": {
+        "width": "23",
+        "height": "23"
+      },
+      "weight": "20kg",
+      "comments": []
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "productId": 1,
-      "description": "Great product!",
-      "date": "14:00 22.08.2021"
-    },
-    {
-      "id": 2,
-      "productId": 1,
-      "description": "Good quality.",
-      "date": "15:30 23.08.2021"
+      "id": "1742322897352",
+      "productId": "1742322473379",
+      "description": "want to buy",
+      "date": "2025-03-18T18:34:57.352Z"
     }
   ]
 }

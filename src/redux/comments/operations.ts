@@ -7,7 +7,7 @@ import {
 } from "../../api/comments";
 import axios from "axios";
 
-export const getComments = createAsyncThunk<Comment[], number>(
+export const getComments = createAsyncThunk<Comment[], string>(
   "comments/getComments",
   async (productId, { rejectWithValue }) => {
     try {
@@ -35,7 +35,7 @@ export const addComment = createAsyncThunk<Comment, Comment>(
   }
 );
 
-export const deleteComment = createAsyncThunk<number, number>(
+export const deleteComment = createAsyncThunk<string, string>(
   "comments/deleteComment",
   async (id, { rejectWithValue }) => {
     try {

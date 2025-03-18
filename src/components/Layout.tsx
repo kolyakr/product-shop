@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Layout = () => {
+const Layout: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[#121212] text-white overflow-auto">
+    <div className="min-h-screen flex flex-col text-[var(--black-color)] overflow-auto">
       <Header />
       <main className="flex-1 wrapper">
         <Outlet />

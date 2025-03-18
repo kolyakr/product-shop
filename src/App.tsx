@@ -5,7 +5,7 @@ import ProductList from "./pages/ProductList";
 import ProductDetails from "./pages/ProductDetails";
 import NotFound from "./pages/NotFound";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

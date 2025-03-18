@@ -24,7 +24,7 @@ export const getProducts = createAsyncThunk<Product[], void>(
   }
 );
 
-export const getProductById = createAsyncThunk<Product, number>(
+export const getProductById = createAsyncThunk<Product, string>(
   "products/getProductById",
   async (id, { rejectWithValue }) => {
     try {
@@ -54,7 +54,7 @@ export const addProduct = createAsyncThunk<Product, Product>(
 
 export const updateProduct = createAsyncThunk<
   Product,
-  { product: Partial<Product>; id: number }
+  { product: Partial<Product>; id: string }
 >("products/updateProduct", async ({ product, id }, { rejectWithValue }) => {
   try {
     const updatedProduct = await updateProductApi(id, product);
@@ -67,10 +67,11 @@ export const updateProduct = createAsyncThunk<
   }
 });
 
-export const deleteProduct = createAsyncThunk<number, number>(
+export const deleteProduct = createAsyncThunk<string, string>(
   "products/deleteProduct",
   async (id, { rejectWithValue }) => {
     try {
+      console.log(id);
       await deleteProductApi(id);
       return id;
     } catch (err) {

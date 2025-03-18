@@ -1,5 +1,5 @@
 export interface Product {
-  id: number | null;
+  id: string | null;
   imageUrl: string;
   name: string;
   count: number;
@@ -12,8 +12,8 @@ export interface Product {
 }
 
 export interface Comment {
-  id: number | null;
-  productId: number | null;
+  id: string;
+  productId: string | null;
   description: string;
   date: string;
 }

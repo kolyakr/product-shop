@@ -5,3 +5,10 @@
     @apply max-w-7xl lg:mx-auto px-[20px] py-[25px] md:px-[32px] md:py-[28px] xl:px-[96px] xl:py-[29px] w-full;
   }
 }
+
+:root {
+  --black-color: #121212;
+  --dark-color: #1f1f1f;
+  --green-color: #bedbb0;
+  --white-color: #ffffff;
+}

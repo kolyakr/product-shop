@@ -11,7 +11,7 @@ export const getProductsApi = async () => {
   return data;
 };
 
-export const getProductByIdApi = async (id: number) => {
+export const getProductByIdApi = async (id: string) => {
   const { data } = await instance.get(`/${id}`);
   return data;
 };
@@ -22,13 +22,13 @@ export const addProductApi = async (payload: Product) => {
 };
 
 export const updateProductApi = async (
-  id: number,
+  id: string,
   payload: Partial<Product>
 ) => {
   const { data } = await instance.patch(`/${id}`, payload);
   return data;
 };
 
-export const deleteProductApi = async (id: number) => {
+export const deleteProductApi = async (id: string) => {
   return await instance.delete(`/${id}`);
 };
