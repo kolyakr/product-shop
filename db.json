@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageUrl": "https://via.placeholder.com/150",
+      "name": "Product 1",
+      "count": 5,
+      "size": { "width": 200, "height": 200 },
+      "weight": "500g",
+      "comments": [1, 2]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "productId": 1,
+      "description": "Great product!",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "description": "Good quality.",
+      "date": "15:30 23.08.2021"
+    }
+  ]
+}
